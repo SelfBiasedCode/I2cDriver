@@ -1,10 +1,3 @@
-/*
-* I2cDriver.cpp
-*
-* Created: 15/11/2018 20:11:04
-* Author: SelfBiasedCode
-*/
-
 #include "I2cDriver.hpp"
 #include "I2cStatus.hpp"
 
@@ -14,16 +7,6 @@
 
 namespace I2C
 {
-	// default constructor
-
-	/* // Not required
-	ISR(TWI_vect)
-	{
-	
-	}
-	*/
-	
-	
 	/* Mid Level Functions */
 	
 	void I2cDriver::readBytes(uint8_t * buffer, uint8_t size) const

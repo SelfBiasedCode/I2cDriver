@@ -11,6 +11,11 @@
 #error "I2C speed not defined!"
 #endif
 
+// platform check
+#if !(defined(__AVR_ATmega328__) || defined(__AVR_ATmega328P__) || defined(__AVR_ATmega328PA__))
+#warning "Unsupported platform, please verify compatibility!"
+#endif 
+
 #include "I2cStatus.hpp"
 #include <stdint.h>
 #include <avr/io.h>

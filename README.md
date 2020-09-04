@@ -10,6 +10,7 @@ Debugging can be simplified by defining the preprocessor constant **I2C_CHECK_SU
 ## Usage
 - One instance of I2cDriver controls one I2C slave.
 - Higher level drivers must make sure that they complete communication with the slave in one function. If this is not adhered to, multiple instances of I2cDriver could destructively influence each other.
+- Two preprocessor constants have to be defined to set the I2C speed: **I2C_SPEED_DIV** and **I2C_SPEED_PRE**. It is suggested to set these in a global config file. An example of such a file is included.
 
 ## Known Issues
 1. No destructor is present as teardowns had not been set as a requirement when writing this driver.

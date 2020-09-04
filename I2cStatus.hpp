@@ -1,11 +1,3 @@
-/*
-* I2cStatus.h
-*
-* Created: 21/11/2018 19:04:11
-*  Author: SelfBiasedCode
-*/
-
-
 #ifndef I2CSTATUS_H_
 #define I2CSTATUS_H_
 

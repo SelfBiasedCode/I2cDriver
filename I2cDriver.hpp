@@ -34,7 +34,7 @@ namespace I2C
 		public:
 		
 		/* minimizing class overhead through inline constructor */
-		I2cDriver(uint8_t address):m_address(address)
+		I2cDriver(const uint8_t address):m_address(address)
 		{
 			// set speed
 			TWBR = I2C_SPEED_DIV;
@@ -68,8 +68,8 @@ namespace I2C
 		private:
 
 		// delete copy constructor and assignment operator
-		I2cDriver( const I2cDriver &c );
-		I2cDriver& operator=( const I2cDriver &c );
+		I2cDriver( const I2cDriver &c ) = delete;
+		I2cDriver& operator=( const I2cDriver &c ) = delete;
 
 	}; //I2cDriver
 } // namespace
